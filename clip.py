@@ -1,11 +1,11 @@
 import cadquery as cq
 
-motor_diameter = 10 + 0.1 # mm
-motor_height = 3 + 0.1
+motor_diameter = 10 + 0.3 # mm
+motor_height = 3 + 0.3
 thickness = 1
-thickness_bottom = 0.2
+thickness_bottom = 0.6
 
-belt_hole_distance = 17
+belt_hole_distance = 17.5
 belt_hole_diameter = 5
 belt_hole_height = 4
 clip_protrusion = 1
@@ -58,7 +58,7 @@ result = (
     .faces(">Y")
     .workplane()
     .moveTo(-width/4,-height*0.45)
-    .hole(4, thickness*2)
+    .hole(6, thickness*2)
 )
 
 
